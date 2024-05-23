@@ -6,6 +6,7 @@ body {
 }
 ul {
     list-style-type: none;
+    padding-inline-start: 0;
 }
 address {
     font-style: normal;
@@ -14,7 +15,39 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
 /* Стилі Хедер */
+
+
+.header-conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 156px;
+}
+
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -24,10 +57,16 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-element {
     color: #2e2f42;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
 }
 
 .menu-item {
@@ -44,6 +83,12 @@ a {
 
 .studio-li .menu-item:focus {
     color: #404BBF;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
+    margin-right: 156px;
 }
 
 .address .address-item {
@@ -76,7 +121,13 @@ a {
         /* секція Головного заголовка */
 .title-box {
     background-color: #2e2f42;
-
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 48px;
+    padding: 188px 0;
+    height: 600px;
 }
 
 .main-title {
@@ -86,6 +137,9 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin: auto;
+    width: 496px;
+    height: 120px;
 }
 
 .button {
@@ -95,6 +149,9 @@ a {
     background-color: #4D5AE5;
     color: #FFFFFF;
     cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 4px;
 }
 
 .button:hover {
@@ -107,6 +164,19 @@ a {
 
         /* секція Послуги */
 
+.features {
+    padding: 120px 156px;
+}
+
+.features-list {
+    display: flex;
+    gap: 8px;
+}
+
+.features-items {
+    flex-basis: calc((100% - 24px) / 4);
+}
+        
 .categories-title {
     font-weight: 500;
     font-size: 20px;
@@ -123,12 +193,41 @@ a {
 
         /* секція Наша команда */
 
-.timets-box {
-    background-color: #fff;
-}
-
 .section-our-team {
     background-color: #F4F4FD;
+    padding: 120px 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 120px;
+}
+
+.timets-box {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 32px;
+    border-radius: 0 0 4px 4px;
+    padding: 0px 0px 32px 0px;
+}
+
+.team-list-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    width: 232px;
+    height: 56px;
+    padding: 32px 16px;
 }
 
 .timets-name {
@@ -138,6 +237,7 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin: 0;
 }
 
 .timets-skill {
@@ -145,9 +245,29 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin: 0;
 }
 
         /* секція Продукти */
+
+.portfolio-section {
+    padding: 120px 156px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-items-content {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
+    width: 360px;
+    height: 120px;
+}
 
 .products-heading {
     font-weight: 500;
