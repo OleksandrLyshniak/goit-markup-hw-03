@@ -36,6 +36,15 @@ img {
 /* Стилі Хедер */
 
 
+.container {
+    width: 1158px;
+    padding: 0 15px;
+}
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .header-conteiner {
     display: flex;
     align-items: center;
@@ -75,6 +84,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .menu-item:hover {
