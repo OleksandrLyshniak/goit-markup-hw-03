@@ -229,7 +229,6 @@ img {
     display: flex;
     gap: 24px;
     margin-top: 120px;
-    width: calc((100% - 72px) / 4);
 }
 
 .timets-box {
@@ -241,6 +240,7 @@ img {
     gap: 32px;
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
+    width: calc((100% - 72px) / 4);
 }
 
 .team-list-content {
