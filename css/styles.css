@@ -313,17 +313,7 @@ img {
 
 .footer-box {
     background-color: #2e2f42;
-    padding: 100px 0
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    /* padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 156px; */
-    width: 264px;
-    height: 112px;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -347,4 +337,5 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
