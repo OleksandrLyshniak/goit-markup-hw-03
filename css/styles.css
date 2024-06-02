@@ -38,7 +38,8 @@ img {
 
 .container {
     width: 1158px;
-    padding: 0 15px;
+    padding: 32px 0;
+    margin: 0 auto;
 }
 
 .header {
@@ -126,6 +127,7 @@ img {
     text-transform: capitalize;
     color: #2e2f42;
     text-align: center;
+    margin-bottom: 72px;
 }
 
         /* секція Головного заголовка */
@@ -140,7 +142,19 @@ img {
     height: 600px;
 }
 
+.title-box .container {
+    /* background-color: #2e2f42; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    /* gap: 48px;
+    padding: 188px 0;
+    height: 600px; */
+}
+
 .main-title {
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -162,6 +176,8 @@ img {
     border: none;
     padding: 16px 32px;
     border-radius: 4px;
+    display: block;
+    min-width: 169px;
 }
 
 .button:hover {
@@ -175,16 +191,16 @@ img {
         /* секція Послуги */
 
 .features {
-    padding: 120px 156px;
+    padding: 120px 0
 }
 
 .features-list {
     display: flex;
-    gap: 8px;
+    gap: 24px;
 }
 
 .features-items {
-    flex-basis: calc((100% - 24px) / 4);
+    width: calc((100% - 72px) / 4)
 }
         
 .categories-title {
@@ -193,6 +209,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .categories-text {
@@ -205,7 +222,7 @@ img {
 
 .section-our-team {
     background-color: #F4F4FD;
-    padding: 120px 156px;
+    padding: 120px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,6 +265,7 @@ img {
     text-align: center;
     color: #2e2f42;
     margin: 0;
+    margin-bottom: 8px
 }
 
 .timets-skill {
@@ -261,7 +279,8 @@ img {
         /* секція Продукти */
 
 .portfolio-section {
-    padding: 120px 156px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-list {
@@ -285,6 +304,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px
 }
 
 .about-products {
@@ -298,9 +318,7 @@ img {
 
 .footer-box {
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 156px;
+    padding: 100px 0
 }
 
 .footer-content {
@@ -321,6 +339,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-element {
